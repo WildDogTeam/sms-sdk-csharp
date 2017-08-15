@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA8A9A1E-9F28-4A1F-85BB-4179A8615960}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Wilddog</RootNamespace>
+    <AssemblyName>Wilddog</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>Wilddog.SMS</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>duanjienan@wilddog.com</Authors>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+    <Owners>Wilddog.com</Owners>
+    <Description>A C# SDK lib for https://www.wilddog.com/product/message-overview</Description>
+    <Summary>A C# SDK lib for https://www.wilddog.com/product/message-overview</Summary>
+    <PackageTags>wilddog sms</PackageTags>
+    <Title>Wilddog SMS SDK</Title>
+    <LangVersion>7</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sms\Client.cs" />
+    <Compile Include="Sms\Http\WilddogHttpClient.cs" />
+    <Compile Include="Sms\Http\Response.cs" />
+    <Compile Include="Sms\Util\CryptoUtils.cs" />
+    <Compile Include="Sms\Http\BalanceResponse.cs" />
+    <Compile Include="Sms\Util\Const.cs" />
+    <Compile Include="Sms\Http\SubmitResponse.cs" />
+    <Compile Include="Sms\Http\StatusResponse.cs" />
+    <Compile Include="Sms\Http\CheckCodeResponse.cs" />
+    <Compile Include="Sms\Http\WilddogError.cs" />
+    <Compile Include="Sms\Util\ValidationUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sms\" />
+    <Folder Include="Sms\Http\" />
+    <Folder Include="Sms\Util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.1.248\build\NuGet.Build.Packaging.targets')" />
+</Project>

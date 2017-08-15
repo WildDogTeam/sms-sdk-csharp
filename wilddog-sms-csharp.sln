@@ -1,0 +1,32 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wilddog", "Wilddog\Wilddog.csproj", "{DA8A9A1E-9F28-4A1F-85BB-4179A8615960}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WilddogTest", "WilddogTest\WilddogTest.csproj", "{8BF22CD2-BC1F-4D32-8597-710DAF689ADD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA8A9A1E-9F28-4A1F-85BB-4179A8615960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8A9A1E-9F28-4A1F-85BB-4179A8615960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8A9A1E-9F28-4A1F-85BB-4179A8615960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8A9A1E-9F28-4A1F-85BB-4179A8615960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF22CD2-BC1F-4D32-8597-710DAF689ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF22CD2-BC1F-4D32-8597-710DAF689ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF22CD2-BC1F-4D32-8597-710DAF689ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF22CD2-BC1F-4D32-8597-710DAF689ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.StandardHeader = $2
+		$0.VersionControlPolicy = $3
+		description = A C# SDK lib for https://www.wilddog.com/product/message-overview
+		version = 1.0.0
+	EndGlobalSection
+EndGlobal
