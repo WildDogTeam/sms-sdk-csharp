@@ -9,7 +9,7 @@
     <RootNamespace>Wilddog</RootNamespace>
     <AssemblyName>Wilddog</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <ReleaseVersion>1.0.1</ReleaseVersion>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Wilddog.SMS</PackageId>
     <PackageVersion>1.0.0</PackageVersion>

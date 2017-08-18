@@ -6,7 +6,7 @@ namespace Wilddog.Sms.Util
         /// <summary>
         /// The send notify URL.
         /// </summary>
-        public static string SEND_NOTIFY_URL = "https://api.wilddog.com/sms/v1/{0}/notify/send";
+        public static string SEND_NOTIFY_URL = "https://sms.wilddog.com/api/v1/{0}/notify/send";
 
         /// <summary>
         /// The send notify sign template.
@@ -16,7 +16,7 @@ namespace Wilddog.Sms.Util
         /// <summary>
         /// The send code URL.
         /// </summary>
-        public static string SEND_CODE_URL = "https://api.wilddog.com/sms/v1/{0}/code/send";
+        public static string SEND_CODE_URL = "https://sms.wilddog.com/api/v1/{0}/code/send";
 
         /// <summary>
         /// The send code sign no parameter template.
@@ -31,7 +31,7 @@ namespace Wilddog.Sms.Util
         /// <summary>
         /// The check code URL.
         /// </summary>
-        public static string CHECK_CODE_URL = "https://api.wilddog.com/sms/v1/{0}/code/check";
+        public static string CHECK_CODE_URL = "https://sms.wilddog.com/api/v1/{0}/code/check";
 
         /// <summary>
         /// The check code sign template.
@@ -41,7 +41,7 @@ namespace Wilddog.Sms.Util
         /// <summary>
         /// The query status URL.
         /// </summary>
-        public static string QUERY_STATUS_URL = "https://api.wilddog.com/sms/v1/{0}/status?rrid={1}&signature={2}";
+        public static string QUERY_STATUS_URL = "https://sms.wilddog.com/api/v1/{0}/status?rrid={1}&signature={2}";
 
         /// <summary>
         /// The query status sign template.
@@ -51,7 +51,7 @@ namespace Wilddog.Sms.Util
         /// <summary>
         /// The query balance URL.
         /// </summary>
-        public static string QUERY_BALANCE_URL = "https://api.wilddog.com/sms/v1/{0}/getBalance?timestamp={1}&signature={2}";
+        public static string QUERY_BALANCE_URL = "https://sms.wilddog.com/api/v1/{0}/getBalance?timestamp={1}&signature={2}";
 
         /// <summary>
         /// The query balance sign template.
@@ -61,6 +61,6 @@ namespace Wilddog.Sms.Util
         /// <summary>
         /// The wilddog sms user agent.
         /// </summary>
-        public static string WILDDOG_SMS_USER_AGENT = "wilddog-sms-csharp/1.0.0";
+        public static string WILDDOG_SMS_USER_AGENT = "wilddog-sms-csharp/1.0.1";
     }
 }

@@ -26,7 +26,12 @@ Global
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
 		$0.StandardHeader = $2
 		$0.VersionControlPolicy = $3
+		$0.TextStylePolicy = $4
+		$4.inheritsSet = null
+		$4.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $5
+		$5.scope = text/x-csharp
 		description = A C# SDK lib for https://www.wilddog.com/product/message-overview
-		version = 1.0.0
+		version = 1.0.1
 	EndGlobalSection
 EndGlobal
