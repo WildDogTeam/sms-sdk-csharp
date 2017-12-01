@@ -12,6 +12,16 @@ namespace Wilddog.Sms.Util
         /// The send notify sign template.
         /// </summary>
         public static string SEND_NOTIFY_SIGN_TEMPLATE = "mobiles={0}&params={1}&templateId={2}&timestamp={3}&{4}";
+        
+        /// <summary>
+        /// The send notify URL.
+        /// </summary>
+        public static string SEND_MARKETING_URL = "https://sms.wilddog.com/api/v1/{0}/marketing/send";
+
+        /// <summary>
+        /// The send notify sign template.
+        /// </summary>
+        public static string SEND_MARKETING_SIGN_TEMPLATE = "content={0}&extno={1}&mobiles={2}&timestamp={3}&{4}";
 
         /// <summary>
         /// The send code URL.
@@ -47,6 +57,16 @@ namespace Wilddog.Sms.Util
         /// The query status sign template.
         /// </summary>
         public static string QUERY_STATUS_SIGN_TEMPLATE = "rrid={0}&{1}";
+        
+        /// <summary>
+        /// The query status v2 URL.
+        /// </summary>
+        public static string QUERY_STATUS_V2_URL = "https://sms.wilddog.com/api/v2/{0}/status?timestamp={1}&signature={2}";
+
+        /// <summary>
+        /// The query status v2 sign template.
+        /// </summary>
+        public static string QUERY_STATUS_V2_SIGN_TEMPLATE = "timestamp={0}&{1}";
 
         /// <summary>
         /// The query balance URL.

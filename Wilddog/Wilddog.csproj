@@ -9,10 +9,10 @@
     <RootNamespace>Wilddog</RootNamespace>
     <AssemblyName>Wilddog</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
-    <ReleaseVersion>1.0.1</ReleaseVersion>
+    <ReleaseVersion>1.0.2</ReleaseVersion>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Wilddog.SMS</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Authors>duanjienan@wilddog.com</Authors>
     <NeutralLanguage>zh-CN</NeutralLanguage>
     <Owners>Wilddog.com</Owners>
@@ -21,6 +21,8 @@
     <PackageTags>wilddog sms</PackageTags>
     <Title>Wilddog SMS SDK</Title>
     <LangVersion>7</LangVersion>
+    <PackageIconUrl>https://img.wdstatic.cn/www-nd/images/header-logo-9ee75577d2.svg</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/WildDogTeam/sms-sdk-csharp</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

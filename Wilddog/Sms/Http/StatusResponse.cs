@@ -55,12 +55,12 @@ namespace Wilddog.Sms.Http
         [JsonProperty("status")]
         public int Status { get; set; }
 
-        /// <summary>
+        /// <summary>    
         /// Gets or sets the mobile.
         /// </summary>
         /// <value>The mobile.</value>
         [JsonProperty("mobile")]
-        public String Mobile { get; set; }
+        public string Mobile { get; set; }
 
         /// <summary>
         /// Gets or sets the receive time.
@@ -68,6 +68,18 @@ namespace Wilddog.Sms.Http
         /// <value>The receive time.</value>
         [JsonProperty("receiveTime")]
         public DateTime ReceiveTime { get; set; }
+        
+        /// <summary>
+        /// Gets or sets the deliveryStatus time.
+        /// </summary>
+        [JsonProperty("deliveryStatus")]
+        public string deliveryStatus { get; set; }
+
+        /// <summary>
+        /// Gets or sets the rrid time.
+        /// </summary>
+        [JsonProperty("rrid")]
+        public string rrid;
 
         /// <summary>
         /// Returns a <see cref="T:System.String"/> that represents the current <see cref="T:Wilddog.Sms.Http.SmsStatus"/>.
@@ -75,7 +87,7 @@ namespace Wilddog.Sms.Http
         /// <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:Wilddog.Sms.Http.SmsStatus"/>.</returns>
         public override string ToString()
         {
-            return $"[SmsStatus: Status={Status}, Mobile={Mobile}, ReceiveTime={ReceiveTime}]";
+            return $"[SmsStatus: Status={Status}, Mobile={Mobile}, ReceiveTime={ReceiveTime}, Rrid={rrid}, deliveryStatus={deliveryStatus}]";
         }
     }
 }

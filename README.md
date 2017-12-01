@@ -91,8 +91,22 @@ else
 
 ### 查询发送状态
 
+#### V1
 ```c#
 StatusResponse statusRsps = client.QueryStatus(rrid);
+if (statusRsps.Success)
+{
+    Console.WriteLine(statusRsps.ToString());
+}
+else
+{
+    Console.WriteLine(statusRsps.WilddogError.ToString());
+}
+```
+
+#### V2
+```c#
+StatusResponse statusRsps = client.QueryStatus();
 if (statusRsps.Success)
 {
     Console.WriteLine(statusRsps.ToString());

@@ -147,6 +147,20 @@ namespace Wilddog.Sms
             StatusResponse response = WilddogHttpClient.DoGet<StatusResponse>(queryStatusUrl);
             return response;
         }
+        
+        /// <summary>
+        /// Queries the status.
+        /// </summary>
+        /// <returns>The status.</returns>
+        public StatusResponse QueryStatus()
+        {
+            long timestamp = DateTimeOffset.Now.ToUnixTimeMilliseconds();
+            
+            string signature = CryptoUtils.Sha256(string.Format(Const.QUERY_STATUS_V2_SIGN_TEMPLATE, timestamp, SmsKey));
+            string queryStatusUrl = string.Format(Const.QUERY_STATUS_V2_URL, AppId, timestamp, signature);
+            StatusResponse response = WilddogHttpClient.DoGet<StatusResponse>(queryStatusUrl);
+            return response;
+        }
 
         /// <summary>
         /// Sends the notify.
